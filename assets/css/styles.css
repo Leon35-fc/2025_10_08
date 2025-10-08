@@ -1,0 +1,90 @@
+/* IMPOSTAZIONI GENERALI */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0.5em 0; /* 1em sopra e sotto, 0 dx e sx */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin: 0.25em 0;
+}
+
+ol,
+ul {
+  padding-left: 2em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+table {
+  margin: 1em 0;
+}
+
+
+/* FONT */
+
+/* HEADER */
+
+header{
+    padding: 1rem; 
+    background-color: deepskyblue;
+    text-align: center; 
+    color: darkblue;
+}
+
+/* MAIN */
+
+#campoInput{
+    margin: 4rem;
+    min-width: 580px;
+    width:  ;
+    padding: 1rem;
+    display: block;
+    border: 1px solid black; 
+    border-radius: 10px
+}
+
+.scheda-attivita{
+    margin: 1rem; 
+    padding: 1rem; 
+    border: 1px solid black; 
+    border-radius: 10px
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+footer p {
+    background-color: deepskyblue;
+    text-align: center;
+    color: darkblue;
+}
