@@ -9,6 +9,18 @@ const eliminaAttivita = function (e){
     e.target.parentElement.remove()
 }
 
+let attivitaCompletata = false
+
+const attivitaFatta = function(e){
+    if(attivitaCompletata === false){
+        e.target.classList.add("attivitaFatta")
+        attivitaCompletata = true
+    } else {
+        e.target.classList.remove("attivitaFatta")
+        attivitaCompletata = false
+    }
+}
+
 //recupero le informazioni dal form
 const gestisciAttivita = function (e) {
     //impedisce l'aggiornamento della pagina quando viene richiamata la funzione
@@ -30,7 +42,7 @@ const gestisciAttivita = function (e) {
 
     //aggiungo i dati del form al div
     scheda.innerHTML = `
-    <p>${qualeAttivita}</p>
+    <p onclick="attivitaFatta(event)">${qualeAttivita}</p>
         <button onclick="eliminaAttivita(event)">Elimina</button>
     `
     // aggiungiamo la nuova scheda alla lista attività
